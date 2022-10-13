@@ -62,8 +62,8 @@ youtube_dict = {
     '10만 이상': 0
 }
 
-for viewsNum in datas:
-    count = viewsNum[-1]
+for i in datas:
+    count = i[-1]
     if count >= 100:
         youtube_dict['100만 이상'] += 1
     if count >= 50 and count < 100:
