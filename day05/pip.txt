@@ -1,0 +1,7 @@
+anaconda prompt 실행
+
+pip install selenium 입력
+pip install webdriver-manager 입력
+pip list 입력 - 설치 확인
+
+구글 - selenium chromedriver 다운로드 - 압축 풀기
