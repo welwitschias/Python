@@ -15,27 +15,26 @@ for weather in tbody.select('tr'):
         location = tds[0].text
         temperature = tds[5].text
         humidity = tds[10].text
+
         weatherList.append([location, temperature, humidity])
 
-# print(weatherList)
+print(weatherList)
 
 print('==============================')
-# pandas로 변환 후 csv 내보내기
 weather_df = pd.DataFrame(weatherList,
                           columns=('location', 'temperature', 'humidity'))
-# print(weather_df)
+print(weather_df)
 
 weather_df.to_csv('day05/weather1.csv', mode='w',
-                  encoding='euc-kr', index=True)
+                  encoding='utf-8-sig', index=False)
 
 print('==============================')
-# csv로 내보낸 후 pandas로 불러오기
-with open('day05/weather2.csv', 'w', encoding='euc-kr') as file:
+with open('day05/weather2.csv', 'w', encoding='utf-8-sig') as file:
     file.write('location, temperature, humidity \n')
     for item in weatherList:
         row = ','.join(item)
         file.write(row+'\n')
 
 df = pd.read_csv('day05/weather2.csv',
-                 index_col='location', encoding='euc-kr')
+                 index_col='location', encoding='utf-8-sig')
 print(df)

@@ -30,6 +30,7 @@ for i in rankcont:
     movieTitle = i.find('a', class_="link_txt").get_text()
     movieGrade = i.find('span', class_="txt_grade").get_text()
     movieReserv = i.find('span', class_="txt_num").get_text()
+
     print('제목 :', movieTitle)
     print('평점 :', movieGrade)
     print('예매율 :', movieReserv)

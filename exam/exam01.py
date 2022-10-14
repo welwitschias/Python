@@ -70,4 +70,4 @@ data = pd.DataFrame([[500, 450, 520, 610], [690, 700, 820, 900],
                      [1990, 2020, 2300, 2420], [1020, 1600, 2200, 2550]],
                     index=[2015, 2016, 2017, 2018, 2019, 2020],
                     columns=['1분기', '2분기', '3분기', '4분기'])
-data.to_csv('c:/python/data.csv', header='False', encoding='euc-kr')
+data.to_csv('exam/data.csv', header='False', encoding='utf-8-sig')

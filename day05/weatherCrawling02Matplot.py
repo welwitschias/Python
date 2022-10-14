@@ -3,7 +3,7 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 
 df = pd.read_csv('day05/weather2.csv',
-                 index_col='location', encoding='euc-kr')
+                 index_col='location', encoding='utf-8-sig')
 # print(df)
 
 city_df = df.loc[['서울', '인천', '대전', '대구', '광주', '부산', '울산']]

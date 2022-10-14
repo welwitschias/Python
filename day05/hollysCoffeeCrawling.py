@@ -30,9 +30,9 @@ result = []
 hollys_store(result)
 
 print('==============================')
-hollys_dataframe = pd.DataFrame(result, columns=(
+hollys_df = pd.DataFrame(result, columns=(
     'storeLocation', 'storeName', 'storeAddress', 'storeCallNum'))
-print(hollys_dataframe)
+print(hollys_df)
 
-print('==============================')
-hollys_dataframe.to_csv('day05/hollys.csv', mode='w', encoding='euc-kr', index=True)
+hollys_df.to_csv('day05/hollys.csv', mode='w',
+                 encoding='utf-8-sig', index=True)

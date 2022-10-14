@@ -6,9 +6,10 @@ from selenium.webdriver.common.by import By
 path = 'C:\\python\\chromedriver_win32\\chromedriver.exe'
 options = wd.ChromeOptions()
 options.add_experimental_option('excludeSwitches', ['enable-logging'])
-options.add_experimental_option("detach", True)  # 창 꺼짐 방지
+options.add_experimental_option('detach', True)  # 창 꺼짐 방지
 driver = wd.Chrome(service=Service(
     ChromeDriverManager().install()), options=options)
+# driver = wd.Chrome(path, options=options)  # deprecated (더 이상 사용되지 않는) 코드
 
 driver.get('https://www.naver.com')
 driver.find_element(By.ID, 'query').send_keys('파이썬')
