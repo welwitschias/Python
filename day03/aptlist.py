@@ -2,7 +2,7 @@ import usecsv
 import re
 import csv
 
-ap = usecsv.opencsv('c:/python/workspace/day03/apt_201910.csv')
+ap = usecsv.opencsv('day03/apt_201910.csv')
 apt = usecsv.switchcsv(ap)
 
 # 3줄만 출력하기

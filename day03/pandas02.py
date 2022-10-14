@@ -54,6 +54,6 @@ print(df3['1반'].sum())
 print(df3['1반'].mean())
 
 print('==============================')
-df5.to_csv('day03/df5.csv', header='False')
-df_read = pd.read_csv('day03/df5.csv', encoding='utf-8')
+df5.to_csv('day03/dataframe.csv', header='False', encoding='utf-8-sig')
+df_read = pd.read_csv('day03/dataframe.csv', encoding='utf-8-sig')
 print(df_read)

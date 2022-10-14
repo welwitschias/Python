@@ -54,9 +54,9 @@ print(df2['국어'])
 print(df2.영어)  # 비추천
 
 print('==============================')
-# 엑셀파일로 내보내기(내보낼 때 utf-8 사용 시 한글 깨짐)
-# df2.to_csv('c:/python/score.csv', header='False', encoding='euc-kr')
+# 엑셀파일로 내보내기
+# df2.to_csv('basic/score.csv', header='False', encoding='utf-8-sig')
 
 # 엑셀파일 불러오기(내보낼 때의 encoding type이랑 동일해야 함)
-df3 = pd.read_csv('c:/python/score.csv', encoding='utf-8')
+df3 = pd.read_csv('basic/score.csv', encoding='utf-8-sig')
 print(df3)
