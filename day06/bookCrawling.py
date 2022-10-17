@@ -14,7 +14,7 @@ driver = wd.Chrome(service=Service(
 
 url = 'https://book.interpark.com/bookPark/html/book.html'
 driver.get(url)
-driver.implicitly_wait(1)
+time.sleep(1)
 
 driver.find_element(
     By.XPATH, '//*[@id="header"]/div[3]/div/div[2]/ul/li[1]/a').click()

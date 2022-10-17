@@ -1,0 +1,3 @@
+anaconda prompt 실행
+
+pip install pymysql 입력

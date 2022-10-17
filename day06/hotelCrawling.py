@@ -14,7 +14,7 @@ driver = wd.Chrome(service=Service(
 
 url = 'http://tour.interpark.com/?mbn=tour&mln=tour'
 driver.get(url)
-driver.implicitly_wait(1)
+time.sleep(1)
 
 # 장소 입력하기
 driver.find_element(By.ID, 'SearchGNBText').send_keys('제주도')  # 방법 1
